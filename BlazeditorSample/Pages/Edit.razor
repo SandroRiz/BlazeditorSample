@@ -5,7 +5,7 @@
 
 <TextEditor Id="text-editor">
     <EditorContent>
-        This example shows you the blazor with TinyMCE.
+        @text
     </EditorContent>
 </TextEditor>
 
@@ -14,5 +14,5 @@
 </p>
 
 @code {
-
+    private string text = "It's " + DateTime.Now.ToLongTimeString();
 }
